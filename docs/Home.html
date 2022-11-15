@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Periodic Table of Elements</title>
+        <link rel="stylesheet" href="Home.css">
+        <script src="Home.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            <!--Periodic Table Section-->
+            <div class="pt">
+                
+                <div class="GLine">
+                    <div class="r1"><p>1</p></div>
+                    <div class="r1"><p>2</p></div>
+                    <div class="r1"><p>3</p></div>
+                    <div class="r1"><p>4</p></div>
+                    <div class="r1"><p>5</p></div>
+                    <div class="r1"><p>6</p></div>
+                    <div class="r1"><p>7</p></div>
+                    <div class="r1"><p>8</p></div>
+                    <div class="r1"><p>9</p></div>
+                    <div class="r1"><p>10</p></div>
+                    <div class="r1"><p>11</p></div>
+                    <div class="r1"><p>12</p></div>
+                    <div class="r1"><p>13</p></div>
+                    <div class="r1"><p>14</p></div>
+                    <div class="r1"><p>15</p></div>
+                    <div class="r1"><p>16</p></div>
+                    <div class="r1"><p>17</p></div>
+                    <div class="r1"><p>18</p></div>
+                </div>
+
+                <div class="PLine">
+                    <div class="c1"><p>1</p></div>
+                    <div class="c1"><p>2</p></div>
+                    <div class="c1"><p>3</p></div>
+                    <div class="c1"><p>4</p></div>
+                    <div class="c1"><p>5</p></div>
+                    <div class="c1"><p>6</p></div>
+                    <div class="c1"><p>7</p></div>
+                </div>
+
+                <button class="H margin frozy" onclick="display(0)">
+                    H
+                </button>
+
+                <div class="NG">
+                    <button class="ng margin pink" onclick="display(1)">He</button>
+                    <button class="ng margin pink" onclick="display(9)">Ne</button>
+                    <button class="ng margin pink" onclick="display(17)">Ar</button>
+                    <button class="ng margin pink" onclick="display(35)">Kr</button>
+                    <button class="ng margin pink" onclick="display(53)">Xe</button>
+                    <button class="ng margin pink" onclick="display(85)">Rn</button>
+                </div>
+
+                <div class="AM">
+                    <button class="am margin" onclick="display(2)">Li</button>
+                    <button class="am margin" onclick="display(10)">Na</button>
+                    <button class="am margin" onclick="display(18)">K</button>
+                    <button class="am margin" onclick="display(36)">Rb</button>
+                    <button class="am margin" onclick="display(54)">Cs</button>
+                    <button class="am margin" onclick="display(86)">Fr</button>
+                </div>
+
+                <div class="AEM">
+                    <button class="aem margin" onclick="display(3)">Be</button>
+                    <button class="aem margin" onclick="display(11)">Mg</button>
+                    <button class="aem margin" onclick="display(19)">Ca</button>
+                    <button class="aem margin" onclick="display(37)">Sr</button>
+                    <button class="aem margin" onclick="display(55)">Ba</button>
+                    <button class="aem margin" onclick="display(87)">Ra</button>
+                </div>
+
+                <div class="TM">
+                    <button class="tm margin purple" onclick="display(20)">Sc</button>
+                    <button class="tm margin purple" onclick="display(21)">Ti</button>
+                    <button class="tm margin purple" onclick="display(22)">V</button>
+                    <button class="tm margin purple" onclick="display(23)">Cr</button>
+                    <button class="tm margin purple" onclick="display(24)">Mn</button>
+                    <button class="tm margin purple" onclick="display(25)">Fe</button>
+                    <button class="tm margin purple" onclick="display(26)">Co</button>
+                    <button class="tm margin purple" onclick="display(27)">Ni</button>
+                    <button class="tm margin purple" onclick="display(28)">Cu</button>
+                    <button class="tm margin purple" onclick="display(29)">Zn</button>
+                </div>
+
+                <div class="TM2">
+                    <button class="tm2 margin purple" onclick="display(38)">Y</button>
+                    <button class="tm2 margin purple" onclick="display(39)">Zr</button>
+                    <button class="tm2 margin purple" onclick="display(40)">Nb</button>
+                    <button class="tm2 margin purple" onclick="display(41)">Mo</button>
+                    <button class="tm2 margin purple" onclick="display(42)">Tc</button>
+                    <button class="tm2 margin purple" onclick="display(43)">Ru</button>
+                    <button class="tm2 margin purple" onclick="display(44)">Rh</button>
+                    <button class="tm2 margin purple" onclick="display(45)">Pd</button>
+                    <button class="tm2 margin purple" onclick="display(46)">Ag</button>
+                    <button class="tm2 margin purple" onclick="display(47)">Cd</button>
+                </div>
+
+                <div class="TM3">
+                    <button class="tm3 margin purple" onclick="display(71)">Hf</button>
+                    <button class="tm3 margin purple" onclick="display(72)">Ta</button>
+                    <button class="tm3 margin purple" onclick="display(73)">W</button>
+                    <button class="tm3 margin purple" onclick="display(74)">Re</button>
+                    <button class="tm3 margin purple" onclick="display(75)">Os</button>
+                    <button class="tm3 margin purple" onclick="display(76)">Ir</button>
+                    <button class="tm3 margin purple" onclick="display(77)">Pt</button>
+                    <button class="tm3 margin purple" onclick="display(78)">Au</button>
+                    <button class="tm3 margin purple" onclick="display(79)">Hg</button>
+                </div>
+
+                <div class="TM4">
+                    <button class="tm4 margin purple" onclick="display(103)">Rf</button>
+                    <button class="tm4 margin purple" onclick="display(104)">Db</button>
+                    <button class="tm4 margin purple" onclick="display(105)">Sg</button>
+                    <button class="tm4 margin purple" onclick="display(106)">Bh</button>
+                    <button class="tm4 margin purple" onclick="display(107)">Hs</button>
+                </div>
+
+                <button class="La57 margin" onclick="display(56)">
+                    La
+                </button>
+
+                <button class="Ac89 margin" onclick="display(88)">
+                    Ac
+                </button>
+
+                <div class="LTHDactd">
+                    <button class="lthd margin" onclick="display(57)">Ce</button>
+                    <button class="lthd margin" onclick="display(58)">Pr</button>
+                    <button class="lthd margin" onclick="display(59)">Nd</button>
+                    <button class="lthd margin" onclick="display(60)">Pm</button>
+                    <button class="lthd margin" onclick="display(61)">Sm</button>
+                    <button class="lthd margin" onclick="display(62)">Eu</button>
+                    <button class="lthd margin" onclick="display(63)">Gd</button>
+                    <button class="lthd margin" onclick="display(64)">Tb</button>
+                    <button class="lthd margin" onclick="display(65)">Dy</button>
+                    <button class="lthd margin" onclick="display(66)">Ho</button>
+                    <button class="lthd margin" onclick="display(67)">Er</button>
+                    <button class="lthd margin" onclick="display(68)">Tm</button>
+                    <button class="lthd margin" onclick="display(69)">Yb</button>
+                    <button class="lthd margin" onclick="display(70)">Lu</button>
+
+                    <button class="actd margin" onclick="display(89)">Th</button>
+                    <button class="actd margin" onclick="display(90)">Pa</button>
+                    <button class="actd margin" onclick="display(91)">U</button>
+                    <button class="actd margin" onclick="display(92)">Np</button>
+                    <button class="actd margin" onclick="display(93)">Pu</button>
+                    <button class="actd margin" onclick="display(94)">Am</button>
+                    <button class="actd margin" onclick="display(95)">Cm</button>
+                    <button class="actd margin" onclick="display(96)">Bk</button>
+                    <button class="actd margin" onclick="display(97)">Cf</button>
+                    <button class="actd margin" onclick="display(98)">Es</button>
+                    <button class="actd margin" onclick="display(99)">Fm</button>
+                    <button class="actd margin" onclick="display(100)">Md</button>
+                    <button class="actd margin" onclick="display(101)">No</button>
+                    <button class="actd margin" onclick="display(102)">Lr</button>
+                </div>
+
+                <div class="PTM1">
+                    <button class="ptm1 margin ltgreen" onclick="display(12)">Al</button>
+                    <button class="ptm1 margin ltgreen" onclick="display(30)">Ga</button>
+                </div>
+
+                <div class="PTM2">
+                    <button class="ptm2 margin ltgreen" onclick="display(48)">In</button>
+                    <button class="ptm2 margin ltgreen" onclick="display(49)">Sn</button>
+                </div>
+
+                <div class="PTM3">
+                    <button class="ptm3 margin ltgreen" onclick="display(80)">Tl</button>
+                    <button class="ptm3 margin ltgreen" onclick="display(81)">Pb</button>
+                    <button class="ptm3 margin ltgreen" onclick="display(82)">Bi</button>
+                    <button class="ptm3 margin ltgreen" onclick="display(83)">Po</button>
+                    <button class="ptm3 margin ltgreen" onclick="display(84)">At</button>
+                </div>
+
+                <div class="UP">
+                    <button class="up margin" onclick="display(108)">Mt</button>
+                    <button class="up margin" onclick="display(109)">Ds</button>
+                    <button class="up margin" onclick="display(110)">Rg</button>
+                    <button class="up margin" onclick="display(111)">Cn</button>
+                    <button class="up margin" onclick="display(112)">Nh</button>
+                    <button class="up margin" onclick="display(113)">Fl</button>
+                    <button class="up margin" onclick="display(114)">Mc</button>
+                    <button class="up margin" onclick="display(115)">Lv</button>
+                    <button class="up margin" onclick="display(116)">Ts</button>
+                    <button class="up margin" onclick="display(117)">Og</button>
+                </div>
+
+                <button class="B margin yellow" onclick="display(4)">
+                    B
+                </button>
+
+                <div class="M1">
+                    <button class="m1 margin yellow" onclick="display(13)">Si</button>
+                    <button class="m1 margin yellow" onclick="display(31)">Ge</button>
+                </div>
+
+                <div class="M2">
+                    <button class="m2 margin yellow" onclick="display(32)">As</button>
+                    <button class="m2 margin yellow" onclick="display(50)">Sb</button>
+                </div>
+
+                <button class="Te margin yellow" onclick="display(51)">
+                    Te
+                </button>
+
+                <button class="C margin frozy" onclick="display(5)">
+                    C
+                </button>
+
+                <div class="RNM1">
+                    <button class="rnm1 margin frozy" onclick="display(6)">N</button>
+                    <button class="rnm1 margin frozy" onclick="display(7)">O</button>
+                    <button class="rnm1 margin frozy" onclick="display(8)">F</button>
+                </div>
+
+                <div class="RNM2">
+                    <button class="rnm2 margin frozy" onclick="display(14)">P</button>
+                    <button class="rnm2 margin frozy" onclick="display(15)">S</button>
+                    <button class="rnm2 margin frozy" onclick="display(16)">Cl</button>
+                </div>
+
+                <div class="RNM3">
+                    <button class="rnm3 frozy margin" onclick="display(33)">Se</button>
+                    <button class="rnm3 frozy margin" onclick="display(34)">Br</button>
+                </div>
+
+                <button class="RNM4 margin frozy" onclick="display(52)">
+                    I
+                </button>
+            </div>
+
+            <!--Element info Section-->
+            <div class="ei">
+
+                <div class="e1">
+                    <div id="symbol">
+                        " " <br>
+                        ___
+                    </div>
+                </div>
+
+                <div class="e2">
+                    <div id="eleName"></div>
+                    <div id="atmNo"></div>
+                    <div id="atmMass"></div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
